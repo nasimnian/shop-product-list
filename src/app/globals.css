@@ -1,0 +1,65 @@
+@import "tailwindcss";
+
+@theme {
+  /* Main color - Luxurious Emerald Green */
+  --color-primary-50: #e6f0ed;
+  --color-primary-100: #cce1db;
+  --color-primary-200: #99c3b7;
+  --color-primary-300: #66a593;
+  --color-primary-400: #33876f;
+  --color-primary-500: #1A4D3E;    /* Main color */
+  --color-primary-600: #153e31;
+  --color-primary-700: #0e3328;    /* Dark color */
+  --color-primary-800: #0a261e;
+  --color-primary-900: #051a13;
+  
+  /* Gold color for special elements */
+  --color-gold-50: #faf8f0;
+  --color-gold-100: #f5f0e0;
+  --color-gold-200: #ebe1c2;
+  --color-gold-300: #e1d2a3;
+  --color-gold-400: #d7c385;
+  --color-gold-500: #D4AF37;       /* Main gold */
+  --color-gold-600: #c4a132;
+  --color-gold-700: #b38e2c;
+  --color-gold-800: #a37a26;
+  --color-gold-900: #926720;
+  
+  /* Gray colors */
+  --color-gray-50: #faf9f7;
+  --color-gray-100: #f5f3f0;
+  --color-gray-200: #e9e7e3;
+  --color-gray-300: #d6d3cd;
+  --color-gray-400: #b8b4ab;
+  --color-gray-500: #9a958a;
+  --color-gray-600: #7c7669;
+  --color-gray-700: #5e5748;
+  --color-gray-800: #3f3827;
+  --color-gray-900: #211c13;
+  
+  /* Additional colors */
+  --color-success: #10b981;
+  --color-warning: #f59e0b;
+  --color-error: #ef4444;
+  --color-info: #3b82f6;
+}
+
+@layer utilities {
+  .line-clamp-1 {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+  }
+  .line-clamp-2 {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+  }
+}
+
+body {
+  background: linear-gradient(135deg, var(--color-gray-50) 0%, #f0ede8 100%);
+  font-family: 'IRANSans', 'Segoe UI', Tahoma, system-ui, sans-serif;
+}
