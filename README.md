@@ -1,4 +1,4 @@
-# ☕ Shop Product List - Online Store Product Catalog
+# Shop Product List - Online Store Product Catalog
 
 A professional product listing web application built for online stores with advanced search, filtering, and sorting capabilities.
 
