@@ -1,26 +1,30 @@
-import type { Metadata } from "next";
-import { Inter } from "next/font/google";
-import "./globals.css";
-import Providers from "./providers";
-
-const inter = Inter({ subsets: ["latin"] });
+import type { Metadata } from 'next';
+import QueryProvider from './providers/QueryProvider';
+import './globals.css';
 
 export const metadata: Metadata = {
-  title: "لیست محصولات",
-  description: "نمایش لیست محصولات با قابلیت جستجو و فیلتر",
+  title: 'Online Coffee Shop | Premium Coffee Beans',
+  description: 'Best coffee beans at best prices. Quality & authenticity guaranteed.',
+  icons: {
+    icon: '/favicon.ico',
+  },
 };
 
 export default function RootLayout({
   children,
-}: Readonly<{
+}: {
   children: React.ReactNode;
-}>) {
+}) {
   return (
     <html lang="fa" dir="rtl">
-      <body className={inter.className}>
-        <Providers>
+      <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
+      </head>
+      <body className="antialiased">
+        <QueryProvider>
           {children}
-        </Providers>
+        </QueryProvider>
       </body>
     </html>
   );
